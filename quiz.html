@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <button class="start" onclick="startquiz();">Start Quiz</button>
+
+    <div class="instructions">
+
+    <div>
+        <p class="info-title">Some instructions before this Quiz</p>
+    </div>
+
+    <div class="rules">
+        <div class="rule">1.You are given <span>60 seconds</span> in total</div>
+        <div class="rule">2.Each correct answer gets one point</div>
+        <div class="rule">3.You can select the options only once</div>
+    </div>
+
+    <div class="buttons">
+        <button class="exit" onclick="exitquiz();">Exit Quiz</button>
+        <button class="continue">Continue</button>
+    </div>
+    </div>
+
+    <div class="quiz-app">
+        <header>
+            <div class="app-title">IPL Quiz Questions</div>
+        </header>
+
+        <section>
+            <div class="question">
+                <span>This is a sample question</span>
+            </div>
+
+            <div class="options-list">
+                <div class="options">
+                    <span>Option 1</span>
+                    <div></div>
+                </div>
+
+                <div class="options">
+                    <span>Option 2</span>
+                    <div></div>
+                </div>
+
+                <div class="options">
+                    <span>Option 3y</span>
+                    <div></div>
+                </div>
+
+                <div class="options">
+                    <span>Option 4</span>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="submit">
+                <button class="next">Next Question</button>
+            </div>
+        </footer>
+    </div>
+
+    <div class="result">
+        <div class="result-icon">
+            <i class="fas fa-trophy"></i>
+        </div>
+
+        <div class="completion">You've'completetd the Quiz</div>
+        <div class="quiz-score">You scored <span>0 off 5</span></div>
+        <div class="result-buttons">
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+    <script src="questions.js"></script>
+</body>
+
+</html>
